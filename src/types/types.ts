@@ -13,17 +13,7 @@ export interface AuthResponseError{
         error: string;
     }
 }
-interface ExtendedAuthContext {
-    esAutentico: boolean;
-    getAccessToken: () => string;
-    saveUser: (userData: AuthResponse) => void;
-    getRefreshToken: () => string | null;
-    getUser: () => User | undefined;
-    signOut: () => void;
-    getParqueadero: () => parqueadero | undefined;
-    createParqueadero: (newParqueadero: parqueadero) => void;
-    roles: string[]; // Add this line
-  }
+
 
 export interface User{
     _id: string;
